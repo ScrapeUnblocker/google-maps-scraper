@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-maps-scraper"
+version = "0.1.0"
+description = "Scrape Google Maps / Local business listings as clean JSON via the ScrapeUnblocker Google Local plugin."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "ScrapeUnblocker" }]
+keywords = [
+    "google-maps",
+    "google-local",
+    "google-maps-scraper",
+    "local-businesses",
+    "lead-generation",
+    "web-scraping",
+    "scraper",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+]
+dependencies = ["requests>=2.25"]
+
+[project.urls]
+Homepage = "https://scrapeunblocker.com/?utm_source=github&utm_medium=integration&utm_campaign=example-repos"
+Documentation = "https://docs.scrapeunblocker.com/?utm_source=github&utm_medium=integration&utm_campaign=example-repos"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+google-maps-scraper = "google_maps_scraper.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "tests"]
+testpaths = ["tests"]
