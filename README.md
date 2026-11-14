@@ -1,7 +1,7 @@
 # google-maps-scraper
 
 [![CI](https://github.com/ScrapeUnblocker/google-maps-scraper/actions/workflows/ci.yml/badge.svg)](https://github.com/ScrapeUnblocker/google-maps-scraper/actions/workflows/ci.yml)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Scrape Google Maps / Google Local business listings as clean JSON** — name,
@@ -14,6 +14,9 @@ browser rendering yourself — you send a keyword, you get structured data back.
 
 Great for **local lead generation, competitor research, review monitoring and
 market analysis** across cities and verticals.
+
+Want new local leads on a schedule, delivered to HubSpot, Pipedrive or Airtable? See
+[google-maps-leads-to-crm](https://github.com/ScrapeUnblocker/google-maps-leads-to-crm).
 
 ## Features
 

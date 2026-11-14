@@ -48,9 +48,7 @@ def test_include_sponsored_false_filters_ads():
 
 
 def test_limit_caps_results():
-    scraper, _ = _scraper(
-        [FakeResponse(200, page([make_item(name=f"P{i}") for i in range(5)]))]
-    )
+    scraper, _ = _scraper([FakeResponse(200, page([make_item(name=f"P{i}") for i in range(5)]))])
     places = scraper.search("kw", limit=2)
     assert len(places) == 2
 
